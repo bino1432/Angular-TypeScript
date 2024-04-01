@@ -20,3 +20,5 @@ console.log(numbers[2])
 //3 - Any
 
 const qualquerCoisa:any = [1, "Bernardo", true]
+
+console.log(qualquerCoisa)

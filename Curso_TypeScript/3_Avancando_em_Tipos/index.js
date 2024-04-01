@@ -10,3 +10,4 @@ numeros.push(300);
 console.log(numbers[2]);
 //3 - Any
 var qualquerCoisa = [1, "Bernardo", true];
+console.log(qualquerCoisa);
