@@ -22,3 +22,43 @@ console.log(numeros[2])
 const qualquerCoisa:any = [1, "Bernardo", true]
 
 console.log(qualquerCoisa)
+
+// 4 - parametros tipados
+
+function soma(a: number, b: number){
+    console.log(a + b)
+}
+
+soma(4, 5)
+
+// 5 - retorno de funcao
+function greeting(nome: string): string{
+    return "olá: " + nome
+}
+
+console.log(greeting("Bernardo"))
+
+// 6 - funcao anonima
+setTimeout(function() {
+
+    const sallary = 2000
+
+    // console.log(sallary)
+
+}, 2000)
+
+// 7 - tipos de objetos
+
+function passCordinates(coord: {x: number, y: number}){
+    console.log("O X é: " + coord.x)
+    console.log("O Y é: " + coord.y)
+}
+
+const objCoord = {
+    x: 124,
+    y: 43.2
+}
+
+passCordinates(objCoord)
+
+const pessoaObj: {nome: string, sobrenome: string} = {nome: "Bernardo", sobrenome: "Zapelini"}
