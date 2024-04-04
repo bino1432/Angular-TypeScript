@@ -11,11 +11,11 @@ console.log(strings[0])
 
 // 2 - Outra sintaxe Array
 
-const numeros: Array<number> = [100, 200]
+let numeros: Array<number> = [100, 200]
 
 numeros.push(300)
 
-console.log(numbers[2])
+console.log(numeros[2])
 
 //3 - Any
 
