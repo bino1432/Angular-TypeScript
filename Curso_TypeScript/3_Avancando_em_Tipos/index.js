@@ -24,5 +24,35 @@ console.log(greeting("Bernardo"));
 // 6 - funcao anonima
 setTimeout(function () {
     var sallary = 2000;
-    console.log(sallary);
+    // console.log(sallary)
 }, 2000);
+// 7 - tipos de objetos
+function passCordinates(coord) {
+    console.log("O X é: " + coord.x);
+    console.log("O Y é: " + coord.y);
+}
+var objCoord = {
+    x: 124,
+    y: 43.2
+};
+passCordinates(objCoord);
+var pessoaObj = { nome: "Bernardo", sobrenome: "Zapelini" };
+// 8 - props opcinais
+function showNumbers(a, b, c) {
+    console.log("A: " + a);
+    console.log("A: " + b);
+    if (c) {
+        console.log("A: " + c);
+    }
+}
+showNumbers(1, 2, 3);
+showNumbers(4, 5);
+// 9 - validando argumento opcional
+function advancedGreeting(firstname, lastName) {
+    if (lastName !== undefined) {
+        return console.log("Olá, " + firstname, lastName + " tudo bem?");
+    }
+    return console.log("Olá, " + firstname + " tudo bem?");
+}
+console.log(advancedGreeting("bernardo", "zapelini"));
+console.log(advancedGreeting("bernardo"));
