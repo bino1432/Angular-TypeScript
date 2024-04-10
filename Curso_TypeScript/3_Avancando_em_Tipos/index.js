@@ -56,3 +56,10 @@ function advancedGreeting(firstname, lastName) {
 }
 console.log(advancedGreeting("bernardo", "zapelini"));
 console.log(advancedGreeting("bernardo"));
+// 10 - unoin type
+function showBalance(balance) {
+    console.log("O saldo da conta é R$" + balance);
+}
+showBalance(100);
+showBalance("500");
+var arr2 = [1, "teste", true];
