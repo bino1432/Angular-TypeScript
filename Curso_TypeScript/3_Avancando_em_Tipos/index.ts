@@ -100,3 +100,48 @@ showBalance(100)
 showBalance("500")
 
 const arr2: Array<number | string | boolean> = [1, "teste", true]
+
+// 11 - avancanod em union types
+
+function showUserRole(role: boolean | string){
+    if (typeof role === "boolean"){
+        return "Usuario não aprovado"
+    }
+
+    return "A função do usuario é: " + role
+}
+
+console.log(showUserRole(false))
+console.log(showUserRole("Admin"))
+
+// 12 - tyoe alias
+
+type ID = string | number
+
+function showId(id: ID){
+    console.log("O ID é: " + id)
+}
+
+showId(1)
+showId("200")
+showId(123)
+
+// 13 - interface
+
+interface Point {
+    x: number
+    y: number
+    z: number
+}
+
+function showCoords(obj: Point){
+    console.log("X: " + obj.x + " Y: " + obj.y + " Z: " + obj.z)
+}
+
+const coordObj: Point = {
+    x: 10,
+    y: 23,
+    z: 42
+}
+
+showCoords(coordObj)

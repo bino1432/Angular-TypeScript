@@ -63,3 +63,27 @@ function showBalance(balance) {
 showBalance(100);
 showBalance("500");
 var arr2 = [1, "teste", true];
+// 11 - avancanod em union types
+function showUserRole(role) {
+    if (typeof role === "boolean") {
+        return "Usuario não aprovado";
+    }
+    return "A função do usuario é: " + role;
+}
+console.log(showUserRole(false));
+console.log(showUserRole("Admin"));
+function showId(id) {
+    console.log("O ID é: " + id);
+}
+showId(1);
+showId("200");
+showId(123);
+function showCoords(obj) {
+    console.log("X: " + obj.x + " Y: " + obj.y + " Z: " + obj.z);
+}
+var coordObj = {
+    x: 10,
+    y: 23,
+    z: 42
+};
+showCoords(coordObj);
