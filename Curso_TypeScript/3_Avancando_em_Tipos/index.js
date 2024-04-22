@@ -99,10 +99,22 @@ test = "testando";
 // test = "nao funciona"
 console.log(test);
 function showDirection(direction) {
-    console.log("A direção é: ${direction}");
+    console.log("A direção é: " + direction);
 }
 showDirection("left");
 // showDirection("top")
 // 16 non null assertion operators
 var p = document.getElementById("some-pi");
 console.log(p.innerText);
+// 17 - BigInt
+var n;
+// n = 1
+n = 1000n;
+console.log(n);
+console.log(typeof n);
+console.log(n + 100n);
+// 18 - Symbol
+var symbolA = Symbol("a");
+var symbolB = Symbol("a");
+console.log(symbolA == symbolB);
+console.log(symbolA === symbolB);
