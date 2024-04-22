@@ -56,7 +56,7 @@ function advancedGreeting(firstname, lastName) {
 }
 console.log(advancedGreeting("bernardo", "zapelini"));
 console.log(advancedGreeting("bernardo"));
-// 10 - unoin type
+// 10 - union type
 function showBalance(balance) {
     console.log("O saldo da conta é R$" + balance);
 }
@@ -87,3 +87,22 @@ var coordObj = {
     z: 42
 };
 showCoords(coordObj);
+var somePerson = { name: "Bernardo", age: 17 };
+console.log(somePerson);
+// No alias não pode duplicado
+// type personType = {
+//     age: number
+// }
+// 15 - Literal Type
+var test;
+test = "testando";
+// test = "nao funciona"
+console.log(test);
+function showDirection(direction) {
+    console.log("A direção é: ${direction}");
+}
+showDirection("left");
+// showDirection("top")
+// 16 non null assertion operators
+var p = document.getElementById("some-pi");
+console.log(p.innerText);

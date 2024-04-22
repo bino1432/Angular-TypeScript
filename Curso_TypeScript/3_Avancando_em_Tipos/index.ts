@@ -90,7 +90,7 @@ function advancedGreeting(firstname: string, lastName?: string){
 console.log(advancedGreeting("bernardo", "zapelini"))
 console.log(advancedGreeting("bernardo"))
 
-// 10 - unoin type
+// 10 - union type
 
 function showBalance(balance: string | number){
     console.log("O saldo da conta é R$" + balance)
@@ -114,7 +114,7 @@ function showUserRole(role: boolean | string){
 console.log(showUserRole(false))
 console.log(showUserRole("Admin"))
 
-// 12 - tyoe alias
+// 12 - type alias
 
 type ID = string | number
 
@@ -145,3 +145,48 @@ const coordObj: Point = {
 }
 
 showCoords(coordObj)
+
+// 14 - Interface x Type Alias
+
+interface Person {
+    name: string;
+}
+
+interface Person {
+    age: number
+}
+
+const somePerson: Person = {name: "Bernardo", age: 17}
+
+console.log(somePerson)
+
+type personType = {
+    name: string
+}
+
+// No alias não pode duplicado
+// type personType = {
+//     age: number
+// }
+
+// 15 - Literal Type
+
+let test: "testando"
+
+test = "testando"
+// test = "nao funciona"
+
+console.log(test)
+
+function showDirection(direction: "left" | "right" | "center") {
+    console.log("A direção é: ${direction}")
+}
+
+showDirection("left")
+// showDirection("top")
+
+// 16 non null assertion operators
+
+const p = document.getElementById("some-pi")
+
+console.log(p!.innerText)
