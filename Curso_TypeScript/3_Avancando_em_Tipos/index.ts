@@ -190,3 +190,23 @@ showDirection("left")
 const p = document.getElementById("some-pi")
 
 console.log(p!.innerText)
+
+// 17 - BigInt
+
+let n: bigint
+
+// n = 1
+
+n = 1000n
+
+console.log(n)
+console.log(typeof n)
+console.log(n + 100n)
+
+// 18 - Symbol
+
+let symbolA: symbol = Symbol("a")
+let symbolB = Symbol("a")
+
+console.log(symbolA == symbolB)
+console.log(symbolA === symbolB)
